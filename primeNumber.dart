@@ -2,6 +2,7 @@ void main() {
   int num = 4;
 
   /// m = 5 ~/ 2 = 2
+  /// it will return rounded value ex 7 ~/2 = 3
   int m = num ~/ 2;
   bool isPrime = true;
 

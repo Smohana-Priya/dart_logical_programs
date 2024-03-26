@@ -1,6 +1,8 @@
 import 'dart:math';
 
 void main() {
+  /// 1634
+  /// length is 4 so 1 pow 4 + 6 pow 4 + 3 pow 4 + 4 pow 4 + = 1634 its amstrong number
   int num = 1634;
   double sum = 0;
 

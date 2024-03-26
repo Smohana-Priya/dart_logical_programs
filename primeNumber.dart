@@ -1,24 +1,39 @@
+import 'dart:io';
+
 void main() {
-  int num = 4;
+  stdout.write('Enter the number to check is prime or not: ');
+  int num = int.parse(stdin.readLineSync()!);
 
-  /// m = 5 ~/ 2 = 2
-  /// it will return rounded value ex 7 ~/2 = 3
-  int m = num ~/ 2;
-  bool isPrime = true;
+  /// prime number means it will be itself and 1, doesn't deviced by others
+  if (isPrime(num)) {
+    stdout.write('$num is prime number \n');
+  } else {
+    stdout.write('$num is not prime number');
+  }
+  stdout.write('Enter the starting range: ');
+  int startNum = int.parse(stdin.readLineSync()!);
 
-  /// i = 2; i<= 2; i++
-  for (var i = 2; i <= m; i++) {
-    /// 5 % 2 == 0
-    /// so its not safiesfy
+  stdout.write('Enter the ending range: ');
+  int endNum = int.parse(stdin.readLineSync()!);
+  printPrimesInRange(startNum, endNum);
+}
+
+bool isPrime(int num) {
+  ///
+  for (var i = 2; i <= num / 2; i++) {
+    /// ex 5 --> 5 % 2 remainder 1 so prime
+    /// ex 4 --> 4 % 2 remainder 0 so its not prime
     if (num % i == 0) {
-      isPrime = false; // If num is divisible by i, it's not prime
-      break;
+      return false;
     }
   }
+  return true;
+}
 
-  if (isPrime) {
-    print('$num is a prime number.');
-  } else {
-    print('$num is not a prime number.');
+void printPrimesInRange(int startNum, int endNum) {
+  for (int i = startNum; i <= endNum; i++) {
+    if (isPrime(i)) {
+      print(i);
+    }
   }
 }

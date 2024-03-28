@@ -15,4 +15,9 @@ void main() {
     }
   }
   print(count);
+
+  /// other method to remoce vowels
+
+  String output = str.replaceAll(RegExp('[aeiou]'), '');
+  print(output);
 }

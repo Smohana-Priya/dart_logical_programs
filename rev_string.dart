@@ -1,16 +1,16 @@
 import 'dart:io';
 
 void main() {
-  stdout.write('enter the string');
+  stdout.write('enter the string\n');
   String s = stdin.readLineSync()!;
 
-  print(reverseString(s));
-}
-
-String reverseString(String s) {
+  /// using loop
   String reversed = '';
   for (int i = s.length - 1; i >= 0; i--) {
-    reversed += s[i];
+    reversed = reversed + s[i];
   }
-  return reversed;
+  print(reversed);
+
+  /// using methods
+  print(s.split('').reversed.join());
 }

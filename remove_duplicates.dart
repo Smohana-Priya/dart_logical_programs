@@ -13,4 +13,11 @@ void main() {
     }
   }
   print(b);
+
+  /// finding frequency of duplicates
+  Map<int, int> freq = {};
+  for (int i in input) {
+    freq[i] = (freq[i] ?? 0) + 1;
+  }
+  print(freq); //{1: 2, 3: 2, 2: 2, 4: 1, 5: 1, 8: 1}
 }

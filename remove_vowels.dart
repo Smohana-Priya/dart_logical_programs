@@ -2,7 +2,7 @@ import 'dart:io';
 
 void main() {
   int count = 0;
-  stdout.write('Enter a string to remove vowels: ');
+  stdout.write('Enter a string to find count of vowels: ');
   String str = stdin.readLineSync()!;
 
   List<String> vowels = ['a', 'e', 'i', 'o', 'u'];

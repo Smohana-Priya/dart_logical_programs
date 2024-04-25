@@ -18,7 +18,7 @@ void main() {
   /// finall we need to change the type from string into int
   /// like int.parse(numberStr)
 
-  /// Methematical approch
+  /// method 2 --------->>>> Methematical approch
 
   int revNum = 0;
   while (number != 0) {

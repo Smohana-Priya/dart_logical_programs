@@ -4,7 +4,7 @@ void main() {
   stdout.write('Enter the number to check is prime or not: ');
   int num = int.parse(stdin.readLineSync()!);
 
-  /// prime number means it will be itself and 1, doesn't deviced by others
+  /// prime number means it will be divide by itself and 1, doesn't deviced by others
   if (isPrime(num)) {
     stdout.write('$num is prime number \n');
   } else {

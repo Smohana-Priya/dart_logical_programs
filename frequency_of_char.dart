@@ -22,7 +22,8 @@ void main() {
   Map<String, int> freqMap = {};
   for (String word in words) {
     freqMap[word] = (freqMap[word] ?? 0) + 1;
-    // print(freqMap);
+
+    print(freqMap);
   }
   print(freqMap);
 }

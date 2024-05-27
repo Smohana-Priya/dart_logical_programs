@@ -82,26 +82,26 @@ void main() {
     },
   ];
 
-  // ///  find list of username;
-  // /// using map
-  // List<String> userNamesByMap =
-  //     users.map((user) => user['username'] as String).toList();
-  // print('userNamesByMap---->$userNamesByMap');
+  ///  find list of username;
+  /// using map
+  List<String> userNamesByMap =
+      users.map((user) => user['username'] as String).toList();
+  print('userNamesByMap---->$userNamesByMap');
 
-  // /// using for loop
-  // List<String> userNameByLoop = [];
-  // for (var user in users) {
-  //   userNameByLoop.add(user['username']);
-  // }
-  // print('userNameByLoop----->$userNameByLoop');
+  /// using for loop
+  List<String> userNameByLoop = [];
+  for (var user in users) {
+    userNameByLoop.add(user['username']);
+  }
+  print('userNameByLoop----->$userNameByLoop');
 
-  // /// using forEach loop
-  // List<String> userNameByforEachLoop = [];
-  // users.forEach((user) {
-  //   // print('userNAmeByforEachloop------>${user['username']}');
-  //   userNameByforEachLoop.add(user['username']);
-  // });
-  // print('userNameByforEachLoop-----$userNameByforEachLoop');
+  /// using forEach loop
+  List<String> userNameByforEachLoop = [];
+  users.forEach((user) {
+    // print('userNAmeByforEachloop------>${user['username']}');
+    userNameByforEachLoop.add(user['username']);
+  });
+  print('userNameByforEachLoop-----$userNameByforEachLoop');
 
   /// find list of company name
   /// using map method
@@ -123,7 +123,7 @@ void main() {
   print(user);
 
   /// using first where method
-Map<String, dynamic> userByfirstwhere =
-      users.firstWhere((user) => user['username'] == 'Bret') ;
+  Map<String, dynamic> userByfirstwhere =
+      users.firstWhere((user) => user['username'] == 'Bret');
   print(userByfirstwhere);
 }

@@ -23,7 +23,10 @@ void main() {
   for (String word in words) {
     freqMap[word] = (freqMap[word] ?? 0) + 1;
 
-    print(freqMap);
+    // print(freqMap);
   }
   print(freqMap);
+  freqMap.forEach((key, value) {
+    print('($key,$value)');
+  });
 }

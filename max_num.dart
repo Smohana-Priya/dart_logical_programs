@@ -29,15 +29,20 @@ void main() {
 
   /// just assign second max is 0
   int secondMax = 0;
+  int thirdMax = 0;
   for (int i in num) {
     if (i > firstMax) {
       /// if the i is larger than firstmax i swap f_max into s_max then f_max is empty so i is the f_max
+      thirdMax = secondMax;
       secondMax = firstMax;
+
       firstMax = i;
     } else if (i > secondMax) {
       /// incause i is not larger then f_max but its larger then s_max means that is the second largest of the list
       secondMax = i;
+      thirdMax = secondMax;
     }
   }
   print('Hey here is the second max number $secondMax');
+  print('Hey here is the third max number $thirdMax');
 }

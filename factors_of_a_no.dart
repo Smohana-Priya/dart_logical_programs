@@ -12,4 +12,17 @@ void main() {
       print(i);
     }
   }
+
+  /// number is 10 nah
+  /// 1/10 reminder is 0
+  /// 2/10 reminder is 0
+  /// 3/10 reminder is 1
+  /// 4/10 reminder is 2
+  /// 5/10 reminder is 0
+  /// 6/10 reminder is 3
+  /// 7/10 reminder is 1
+  /// 8/10 reminder is 4
+  /// 9/10 reminder is 1
+  /// 10/10 reminder is 0
+  /// so output is 1,2,5,10
 }

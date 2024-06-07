@@ -13,6 +13,7 @@ void main() {
 
   while (num > 0) {
     int digit = num % 10;
+    print(digit);
     sum += pow(digit, numberOfDigits);
     num ~/= 10;
   }
